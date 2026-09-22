@@ -17,7 +17,7 @@ The `CWE-306.py` shows that attackers can access commands designed for instructo
 ### POC 2 - XSS via `enableChat`
 #### CWE-79: Cross-Site Scripting
 
-`CWE-79.py` shows an example of utilizing the vulnerability within PoC 1 to inject persistent arbitrary code; by leveraging the [answers](https://github.com/RunestoneInteractive/rs/blob/eca3eba5162d4461dd5966fffbfd58d3022f332f/bases/rsptx/assignment_server_api/routers/peer.py#L960) argument, attacker-controlled input can be inserted into the answers field of the chat GUI without any kind of validation. This allows an attacker to inject a persistent Javascript payload.
+`CWE-79.py` shows an example of utilizing the vulnerability within PoC 1 to inject persistent arbitrary code; by leveraging the [answers](https://github.com/RunestoneInteractive/rs/blob/eca3eba5162d4461dd5966fffbfd58d3022f332f/bases/rsptx/assignment_server_api/routers/peer.py#L960) argument, attacker-controlled input can be inserted into the answers field of the chat GUI without any kind of validation.
 
 ## Usage
 
