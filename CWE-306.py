@@ -1,7 +1,7 @@
 # Security Research PoC
 #
 # Written by Kameron Barnes on September 21, 2026
-# This file demonstrates an XSS CWE-306 vulnerability within the Runestone
+# This file demonstrates CWE-306 vulnerability within the Runestone
 # peer instruction section.
 
 import requests
