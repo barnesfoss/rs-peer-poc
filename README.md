@@ -26,7 +26,7 @@ Both files take 3 basic command line arguments:
 - `course_name` the name of the targeted course
 - `div_id` the name of the target peer instruction assignment
 
-`CWE-79.py` automatically injects payload.html when given these arguments.
+`CWE-79.py` automatically injects payload.html when given these arguments.<br/>
 `CWE-306.py` is slightly more complicated in that it creates a simple repl.
 You can send a control by prefixing a message with `c` e.g. `>> c enableChat`
 All other messages are sent as a broadcast.
