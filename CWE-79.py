@@ -43,7 +43,7 @@ headers = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/152.0.0.0 Safari/537.36"
     ),
-    "Cookie": f"access_token={args.access_token: str}",
+    "Cookie": f"access_token={args.access_token}",
 }
 
 # Send our payload
