@@ -19,6 +19,17 @@ The `CWE-306.py` shows that non-instructor users can access commands designed fo
 
 `CWE-79.py` shows an example of utilizing the vulnerability within PoC 1 to inject persistent arbitrary code; by leveraging the [answers](https://github.com/RunestoneInteractive/rs/blob/eca3eba5162d4461dd5966fffbfd58d3022f332f/bases/rsptx/assignment_server_api/routers/peer.py#L960) argument attacker-controlled input can be inserted into the answers field of the chat GUI without any kind of validation, allowing an attacker to inject a persistent Javascript payload.
 
+## Usage
+
+Both files take 3 basic command line arguments:
+- `access_token` for user authentication, instructor or editor role is not required
+- `course_name` the name of the targeted course
+- `div_id` the name of the target peer instruction assignment
+
+`CWE-79.py` automatically injects payload.html when given these arguments.
+`CWE-306.py` is slightly more complicated in that it creates a simple repl.
+You can send a control by prefixing a message with `c` e.g. `>> c enableChat`
+All other messages are sent as a broadcast.
 
 ## Conclusion
 
