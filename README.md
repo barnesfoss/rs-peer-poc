@@ -2,6 +2,8 @@
 
 This repository contains code that exploits vulnerabilities within the [publish_message](https://github.com/RunestoneInteractive/rs/blob/eca3eba5162d4461dd5966fffbfd58d3022f332f/bases/rsptx/assignment_server_api/routers/peer.py#L1312) api endpoint. This code is for research and debugging purposes only.
 
+![demo](./assets/demo.gif)
+
 ## Vulnerabilities
 ### POC 1 - Access to instructor commands
 #### CWE-306: Missing Authentication for Critical Function
