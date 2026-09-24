@@ -9,7 +9,7 @@ import argparse
 from datetime import datetime
 
 parser = argparse.ArgumentParser(
-    description="Proof-of-concept code that exploits CWE-306 to execute commands"
+    description="Proof-of-concept code that exploits CWE-862 to execute commands"
 )
 
 parser.add_argument(

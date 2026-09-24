@@ -2,14 +2,14 @@
 #
 # Written by Kameron Barnes on September 21, 2026
 # This file demonstrates an XSS vulnerability within the Runestone
-# peer instruction section utilizing CWE-306 and CWE-79.
+# peer instruction section utilizing CWE-862 and CWE-79.
 
 import argparse
 import requests
 import json
 
 parser = argparse.ArgumentParser(
-    description="Proof-of-concept code that exploits CWE-306 and CWE-79 to run\
+    description="Proof-of-concept code that exploits CWE-862 and CWE-79 to run\
     arbitrary code on Runestone peer instruction"
 )
 
