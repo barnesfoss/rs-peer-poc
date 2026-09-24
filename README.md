@@ -6,9 +6,9 @@ This repository contains code that exploits vulnerabilities within the [publish_
 
 ## Vulnerabilities
 ### POC 1 - Access to instructor commands
-#### CWE-306: Missing Authentication for Critical Function
+#### CWE-862: Missing Authorization
 
-The `CWE-306.py` shows that attackers can access commands designed for instructors. Enabling them to use the following:
+The `CWE-862.py` shows that attackers can access commands designed for instructors. Enabling them to use the following:
 - Broadcast - Chat within every chat in the session
 - countDownAndStop - Starts a timer that closes a question for all students
 - enableVote - Start voting questions for all students
@@ -29,10 +29,10 @@ Both files take 3 basic command line arguments:
 - `div_id` the name of the target peer instruction assignment
 
 `CWE-79.py` automatically injects `payload.html` when given these arguments.<br/>
-`CWE-306.py` is slightly more complicated in that it creates a simple repl.
+`CWE-862.py` is slightly more complicated in that it creates a simple repl.
 You can send a control by prefixing a message with `c` e.g. `>> c enableChat`.<br/>
 All other messages are sent as a broadcast.
 
 ## Summary
 
-CWE-306 allows an attacker to gain access to instructor functionality which in turn allows the function of CWE-79. It's important to note that there is still an underlying XSS vulnerability within `enableChat`, which is accessable by anyone with appropriate privileges.
+CWE-862 allows an attacker to gain access to instructor functionality which in turn allows the function of CWE-79. It's important to note that there is still an underlying XSS vulnerability within `enableChat`, which is accessable by anyone with appropriate privileges.
