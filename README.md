@@ -1,4 +1,6 @@
 # Runestone Peer Instruction PoCs
+> [!IMPORTANT]
+> This vulnerability was patched in [8.3.2](https://github.com/RunestoneInteractive/rs/releases/tag/8.3.2) via this [PR #1542](https://github.com/RunestoneInteractive/rs/pull/1542)
 
 This repository contains code that exploits vulnerabilities within the [publish_message](https://github.com/RunestoneInteractive/rs/blob/eca3eba5162d4461dd5966fffbfd58d3022f332f/bases/rsptx/assignment_server_api/routers/peer.py#L1312) api endpoint. This code is for research and debugging purposes only.
 
